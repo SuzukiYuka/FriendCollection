@@ -20,7 +20,7 @@ class FriendsViewController: UIViewController, UITableViewDelegate, UITableViewD
         // Do any additional setup after loading the view, typically from a nib.
         tableView.delegate = self
         tableView.dataSource = self
-        friends = ["ぬっきー":"100002206725510","ながた":"100004518637029","ななこ":"100011505554228","はやきょう":"100011250105179","ふるやん":"100003572363993","いとそ":"100010026723846","たじまっくす":"100003670992521","わんだ":"100004241130446"]
+        friends = ["ぬっきー":"","ながた":"","ななこ":"","はやきょう":"","ふるやん":"","いとそ":"","たじまっくす":"","わんだ":""]
     }
     
     override func didReceiveMemoryWarning() {
