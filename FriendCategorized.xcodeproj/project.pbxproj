@@ -12,6 +12,7 @@
 		E24DCF5F1CA04460007F6712 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E24DCF5D1CA04460007F6712 /* Main.storyboard */; };
 		E24DCF611CA04460007F6712 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E24DCF601CA04460007F6712 /* Assets.xcassets */; };
 		E24DCF641CA04460007F6712 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E24DCF621CA04460007F6712 /* LaunchScreen.storyboard */; };
+		E24DCF6C1CA09981007F6712 /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24DCF6B1CA09981007F6712 /* FriendsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		E24DCF601CA04460007F6712 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E24DCF631CA04460007F6712 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E24DCF651CA04460007F6712 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E24DCF6B1CA09981007F6712 /* FriendsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				E24DCF591CA04460007F6712 /* AppDelegate.swift */,
 				E24DCF5B1CA04460007F6712 /* ViewController.swift */,
+				E24DCF6B1CA09981007F6712 /* FriendsViewController.swift */,
 				E24DCF5D1CA04460007F6712 /* Main.storyboard */,
 				E24DCF601CA04460007F6712 /* Assets.xcassets */,
 				E24DCF621CA04460007F6712 /* LaunchScreen.storyboard */,
@@ -136,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E24DCF5C1CA04460007F6712 /* ViewController.swift in Sources */,
+				E24DCF6C1CA09981007F6712 /* FriendsViewController.swift in Sources */,
 				E24DCF5A1CA04460007F6712 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,28 +8,44 @@
 
 import UIKit
 
-class FriendsViewController: UIViewController {
-
+class FriendsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    @IBOutlet var tableView: UITableView!
+    var categoriKey: String = ""
+    var friends: [String:String] = [:]
+    var selectId: Int!
+    var friendNames: [String] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        // Do any additional setup after loading the view, typically from a nib.
+        tableView.delegate = self
+        tableView.dataSource = self
+        friends = ["ぬっきー":"100002206725510","ながた":"100004518637029","ななこ":"100011505554228","はやきょう":"100011250105179","ふるやん":"100003572363993","いとそ":"100010026723846","たじまっくす":"100003670992521","わんだ":"100004241130446"]
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return friends.count
     }
-    */
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell: UITableViewCell = tableView.dequeueReusableCellWithIdentifier("Cell")!
+        for friendName in friends.keys {
+            friendNames.append(friendName)
+        }
+        cell.textLabel?.text = friendNames[indexPath.row]
+        return cell
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let name = friendNames[indexPath.row]
+        let url = NSURL(string:"fb://profile/"+friends[name]!)
+        UIApplication.sharedApplication().openURL(url!)
+    }
+
 
 }
